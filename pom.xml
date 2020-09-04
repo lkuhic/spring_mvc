@@ -67,6 +67,7 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--Fixing IDEA and Maven modules-->
 
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -86,6 +87,33 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>${spring-framework.version}</version>
+        </dependency>
+
+        <!-- Apache Commons File Upload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!-- Excel view -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.12</version>
+        </dependency>
+
+        <!-- PDF view -->
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.5</version>
         </dependency>
 
     </dependencies>
