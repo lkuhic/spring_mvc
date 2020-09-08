@@ -4,6 +4,7 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/mvc
@@ -11,7 +12,9 @@
 	   http://www.springframework.org/schema/context
 	   http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/jdbc
-       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd">
 
     <!-- Static Resources Configuration (get access to static sources such as CSS and JavaScript files) -->
     <mvc:resources mapping="/resources/**" location="/resources/" />
@@ -19,6 +22,64 @@
         <mvc:resources mapping="/resources/**" location="/resources/themeBlue" />
         <mvc:resources mapping="/resources/**" location="/resources/themeGreen" />
      -->
+
+    <!-- Quartz scheduling configuration -->
+    <task:annotation-driven/>
+
+    <!--ScheduleTask example. Use and @Component on ru.javastudy.mvcHtml5Angular.mvc.scheduling.ScheduleTask-->
+    <context:component-scan base-package="ru.javastudy.mvcHtml5Angular.mvc.scheduling"/>
+
+    <!-- Quartz simple trigger -->
+    <bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+        <property name="jobDetail" ref="simpleQuartzJob" />
+        <property name="repeatInterval" value="3000" />
+        <property name="startDelay" value="1000" />
+    </bean>
+    <!-- Quartz cron trigger -->
+    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="quartzCronJob"/>
+        <property name="cronExpression" value="0/7 * * * * ?" />
+        <!-- every 30 seconds (seconds, minutes, hours, day of month, month, day of week, year(optional)) -->
+    </bean>
+
+    <!-- Quartz job -->
+    <bean id="simpleQuartzJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="simpleQuartzTask" />
+        <property name="targetMethod" value="simpleTaskMethod" />
+    </bean>
+    <!-- Quartz cron job -->
+    <bean id="quartzCronJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="cronQuartzTask" />
+        <property name="targetMethod" value="cronTaskMethod" />
+    </bean>
+
+    <!-- Quartz simple task -->
+    <bean id="simpleQuartzTask" class="ru.javastudy.mvcHtml5Angular.mvc.quartz.QuartzTask" />
+
+    <!-- Quartz cron task -->
+    <bean id="cronQuartzTask" class="ru.javastudy.mvcHtml5Angular.mvc.quartz.CronQuartzTask" />
+
+    <!-- Quartz Scheduler -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobDetails">
+            <list>
+                <ref bean="simpleQuartzJob" />
+                <ref bean="quartzCronJob" />
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="simpleTrigger" />
+                <ref bean="cronTrigger" />
+            </list>
+        </property>
+    </bean>
+
+    <!--or
+   <bean id="scheduleTask" class="ru.javastudy.mvcHtml5Angular.mvc.scheduling.ScheduleTask"/>
+   -->
+
+    <!--End scheduling configuration -->
 
     <!--find property file. See bean id='dataSource' for example ${jdbc.hsqldb.driverClass}-->
     <context:property-placeholder location="classpath:util.properties" />
