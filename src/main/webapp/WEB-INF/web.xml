@@ -35,12 +35,12 @@
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>/WEB-INF/view/orm/orm.jsp</welcome-file>
+        <welcome-file>/WEB-INF/view/index.jsp</welcome-file>
     </welcome-file-list>
 
     <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/view/error/errorpage.jsp</location>
+        <location>/WEB-INF/view/error/error.jsp</location>
     </error-page>
 
     <!--Cyrillic letters encoder-->

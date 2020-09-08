@@ -10,7 +10,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     <!-- To enable JMX Management -->
     <jmxConfigurator/>
 
-    <property name="LOG_HOME" value="c:/springmvc-angularjs-html5/logs" />
+    <property name="LOG_HOME" value="/logs" />
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -31,7 +31,7 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     <!-- Uncomment and add your logger here:
  <logger name="org.springframework.samples.service.service" level="debug"/> -->
 
-    <root level="info">
+    <root level="error">
         <!-- uncomment file-->
         <!--<appender-ref ref="file"/>-->
         <appender-ref ref="console"/>
