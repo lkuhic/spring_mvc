@@ -21,7 +21,7 @@
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
         <property name="order" value="1" />
-        <property name="prefix" value="/WEB-INF/view" />
+        <property name="prefix" value="/WEB-INF/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
@@ -51,12 +51,13 @@
     </bean>
 
 
-    <mvc:view-controller path="/about.html" view-name="/about/about"/>
-    <mvc:view-controller path="/index.html" view-name="/index"/>
-    <mvc:view-controller path="/file.html" view-name="/file/file"/>
-    <mvc:view-controller path="/jdbc.html" view-name="/jdbc/jdbc"/>
-    <mvc:view-controller path="/email.html" view-name="/email/email"/>
-    <mvc:view-controller path="/rest.html" view-name="/rest/rest"/>
-    <mvc:view-controller path="/orm.html" view-name="/orm/orm"/>
+    <mvc:view-controller path="/about.html" view-name="about/about"/>
+    <mvc:view-controller path="/index.html" view-name="index"/>
+    <mvc:view-controller path="/file.html" view-name="file/file"/>
+    <mvc:view-controller path="/jdbc.html" view-name="jdbc/jdbc"/>
+    <mvc:view-controller path="/email.html" view-name="email/email"/>
+    <mvc:view-controller path="/rest.html" view-name="rest/rest"/>
+    <mvc:view-controller path="/orm.html" view-name="orm/orm"/>
+    <mvc:view-controller path="/jstl.html" view-name="jstl/jstl"/>
 
 </beans>
