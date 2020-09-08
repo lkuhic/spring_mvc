@@ -22,8 +22,9 @@ public class ORMService {
 
     public List<User> queryFindAllUsersJPA() {
         System.out.println("ORMService queryfindAllUsersJPA is called");
-        String query = "from User order by iduser";
+        String query = "select c from User as c order by iduser";
         TypedQuery<User> typedQuery = entityManager.createQuery(query, User.class);
+        System.out.println(typedQuery.getResultList().toString());
         return typedQuery.getResultList();
     }
 
