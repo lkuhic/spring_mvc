@@ -23,6 +23,7 @@
         <mvc:resources mapping="/resources/**" location="/resources/themeGreen" />
      -->
 
+    <!--UNCOMMENT TO ACTIVATE SCHEDULER-->
     <!-- Quartz scheduling configuration -->
     <task:annotation-driven/>
 
