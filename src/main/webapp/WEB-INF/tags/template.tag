@@ -40,6 +40,7 @@
 <c:url value="/runtimeException.html" var="runtimeException" />
 <c:url value="/redirectTarget" var="redirectTarget" />
 <c:url value="/scope.html" var="scope" />
+<c:url value="/cookieView.html" var="cookieView" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -89,6 +90,9 @@
                         </li>
                         <li>
                             <a href="${scope}">Object Scope</a>
+                        </li>
+                        <li>
+                            <a href="${cookieView}">Cookie</a>
                         </li>
                     </ul>
                 </li>
