@@ -12,9 +12,7 @@ import ru.javastudy.mvcHtml5Angular.mvc.jdbc.JDBCExample;
 
 import java.util.List;
 
-/**
- * Created for JavaStudy.ru on 24.02.2016.
- */
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:mvc-config.xml", "classpath:application-context.xml"})
 public class JDBCExampleTest {

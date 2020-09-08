@@ -20,6 +20,9 @@
         <!-- Spring -->
         <spring-framework.version>4.3.8.RELEASE</spring-framework.version>
 
+        <!-- jackson json JSON Processing API -->
+        <jackson.databind-version>2.2.3</jackson.databind-version>
+
     </properties>
 
     <dependencyManagement>
@@ -190,6 +193,35 @@
             <version>1.7</version>
         </dependency>
 
+        <!-- Spring REST jackson JSON Processing API -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind-version}</version>
+        </dependency>
+
+        <!--Hibernate ORM-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.0.1.Final</version>
+        </dependency>
+
+        <!--Hibernate validator (contains @NotEmpty)-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+
+        <!--Spring Data-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.9.1.RELEASE</version>
+        </dependency>
+
+
     </dependencies>
     <!--http://startbootstrap.com/template-overviews/modern-business/  this is theme-->
 
@@ -211,8 +243,7 @@
         </plugins>
 
         <!--need to find configs in tests in package web-inf like
-                   @ContextConfiguration(locations = {"classpath:/config/application-context.xml"
-                   -->
+          @ContextConfiguration(locations = {"classpath:/config/application-context.xml"-->
         <testResources>
             <testResource>
                 <directory>src/main/webapp/WEB-INF/config</directory>
