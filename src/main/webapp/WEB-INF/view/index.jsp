@@ -168,10 +168,10 @@
       <div class="well">
         <div class="row">
           <div class="col-md-8">
-            <p>Кнопка чтобы нажимать</p>
+            <p>Calling all units</p>
           </div>
           <div class="col-md-4">
-            <a class="btn btn-lg btn-default btn-block" href="#">Home</a>
+            <a class="btn btn-lg btn-default btn-block" href="/mvc_html5_angular_war_exploded/interceptorCall/subLevel">Interceptor</a>
           </div>
         </div>
       </div>
