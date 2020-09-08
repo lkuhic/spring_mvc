@@ -56,6 +56,16 @@
                     <br />
                     <a href="${pdfController}">PDF</a>
 
+
+                    <br />
+                    <br />
+                        <%--Объект из примера scope.jstl--%>
+                    <c:if test="${not empty sessionScope.sessionObject}">
+                        <p>Объект в области видимости session:</p>
+                        <b>${sessionScope.sessionObject}</b>
+                    </c:if>
+
+
                 </div>
 
             </div>

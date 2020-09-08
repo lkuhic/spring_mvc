@@ -38,6 +38,8 @@
 <c:url value="/orm.html" var="orm" />
 <c:url value="/jstl.html" var="jstl" />
 <c:url value="/runtimeException.html" var="runtimeException" />
+<c:url value="/redirectTarget" var="redirectTarget" />
+<c:url value="/scope.html" var="scope" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -81,6 +83,12 @@
                         </li>
                         <li>
                             <a href="${jstl}">JSTL</a>
+                        </li>
+                        <li>
+                            <a href="${redirectTarget}">Redirect</a>
+                        </li>
+                        <li>
+                            <a href="${scope}">Object Scope</a>
                         </li>
                     </ul>
                 </li>
