@@ -171,7 +171,7 @@
             <p>Calling all units</p>
           </div>
           <div class="col-md-4">
-            <a class="btn btn-lg btn-default btn-block" href="/mvc_html5_angular_war_exploded/interceptorCall/subLevel">Interceptor</a>
+            <a class="btn btn-lg btn-default btn-block" href="/interceptorCall/subLevel">Interceptor</a>
           </div>
         </div>
       </div>

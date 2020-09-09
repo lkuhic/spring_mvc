@@ -74,6 +74,4 @@ public class JDBCExampleTest {
 				System.out.println("TESTTABLE tectcolumn: " + row.get("TESTCOLUMN"));
 		}
 	}*/
-
-
 }
