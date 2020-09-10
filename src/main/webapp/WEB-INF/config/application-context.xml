@@ -28,7 +28,9 @@
     <task:annotation-driven/>
 
     <!--ScheduleTask example. Use and @Component on ru.javastudy.mvcHtml5Angular.mvc.scheduling.ScheduleTask-->
+    <!--UNCOMMENT TO ACTIVATE SCHEDULER
     <context:component-scan base-package="ru.javastudy.mvcHtml5Angular.mvc.scheduling"/>
+    -->
 
     <!-- Quartz simple trigger -->
     <bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
@@ -61,6 +63,7 @@
     <bean id="cronQuartzTask" class="ru.javastudy.mvcHtml5Angular.mvc.quartz.CronQuartzTask" />
 
     <!-- Quartz Scheduler -->
+    <!--UNCOMMENT TO ACTIVATE SCHEDULER
     <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="jobDetails">
             <list>
@@ -75,6 +78,7 @@
             </list>
         </property>
     </bean>
+    -->
 
     <!--or
    <bean id="scheduleTask" class="ru.javastudy.mvcHtml5Angular.mvc.scheduling.ScheduleTask"/>

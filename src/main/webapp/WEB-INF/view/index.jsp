@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1 class="page-header">
-            Изучение Spring MVC + HTML5 + AngularJS + Bootstrap
+            <spring:message code="content.introMsg"/>
           </h1>
         </div>
         <div class="col-md-4">
@@ -101,6 +101,8 @@
       <c:url value="/email.html" var="email"/>
       <c:url value="/orm.html" var="orm" />
       <c:url value="/runtimeException.html" var="runtimeException" />
+      <c:url value="/security.html" var="security" />
+
       <!-- Portfolio Section -->
       <div class="row">
         <div class="col-lg-12">
