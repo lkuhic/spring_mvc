@@ -110,5 +110,6 @@
     <mvc:view-controller path="/login.html" view-name="form/login"/>
     <mvc:view-controller path="/security.html" view-name="security/security"/>
     <mvc:view-controller path="/security/admin.html" view-name="security/admin"/>
+    <mvc:view-controller path="/angularjson.html" view-name="angularjs/angularjson"/>
 
 </beans>

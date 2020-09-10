@@ -43,6 +43,7 @@
 <c:url value="/scope.html" var="scope" />
 <c:url value="/cookieView.html" var="cookieView" />
 <c:url value="/security.html" var="security" />
+<c:url value="/angularjson.html" var="angularjson" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -121,6 +122,9 @@
                         </li>
                         <li>
                             <a href="${security}">Security</a>
+                        </li>
+                        <li>
+                            <a href="${angularjson}">AngularJSON</a>
                         </li>
                     </ul>
                 </li>
