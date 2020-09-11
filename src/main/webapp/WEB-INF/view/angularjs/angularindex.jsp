@@ -45,6 +45,10 @@
                         <h3>AngularJS Expressions</h3>
                         <a href="/expressions.html">Пример выражений в AngularJS</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Bind-Model</h3>
+                        <a href="/ng-bind-model.html">Связывание ng-bind</a>
+                    </div>
                 </div>
 
             </div>
