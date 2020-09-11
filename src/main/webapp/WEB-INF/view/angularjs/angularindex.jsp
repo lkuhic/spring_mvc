@@ -49,6 +49,10 @@
                         <h3>AngularJS Bind-Model</h3>
                         <a href="/ng-bind-model.html">Связывание ng-bind</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Two-way binding</h3>
+                        <a href="/twowaybind.html">Двустороннее связывание</a>
+                    </div>
                 </div>
 
             </div>

@@ -26,6 +26,7 @@
 <c:url value="/angularindex.html" var="angularindex" />
 <c:url value="/expressions.html" var="expressions" />
 <c:url value="/ng-bind-model.html" var="ngbind" />
+<c:url value="/twowaybind.html" var="twowaybind" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -124,6 +125,9 @@
                         </li>
                         <li>
                             <a href="${ngbind}">Bind-Model</a>
+                        </li>
+                        <li>
+                            <a href="${twowaybind}">Two-way binding</a>
                         </li>
                     </ul>
                 </li>
