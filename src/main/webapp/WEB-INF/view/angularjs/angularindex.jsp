@@ -53,6 +53,26 @@
                         <h3>AngularJS Two-way binding</h3>
                         <a href="/twowaybind.html">Двустороннее связывание</a>
                     </div>
+                    <div>
+                        <h3>AngularJS ng-class</h3>
+                        <a href="/ng-class.html">Директива ng-class</a>
+                    </div>
+                    <div>
+                        <h3>AngularJS ng-show</h3>
+                        <a href="/ng-click-show.html">Директивы ng-click, ng-show</a>
+                    </div>
+                    <div>
+                        <h3>AngularJS ng-if</h3>
+                        <a href="/ng-if-switch.html">Директивы ng-if, ng-switch</a>
+                    </div>
+                    <div>
+                        <h3>AngularJS ng-init</h3>
+                        <a href="/ng-init.html">Директива ng-init</a>
+                    </div>
+                    <div>
+                        <h3>AngularJS ng-repeat</h3>
+                        <a href="/ng-repeat.html">Директива ng-repeat</a>
+                    </div>
                 </div>
 
             </div>

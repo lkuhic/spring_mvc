@@ -27,6 +27,11 @@
 <c:url value="/expressions.html" var="expressions" />
 <c:url value="/ng-bind-model.html" var="ngbind" />
 <c:url value="/twowaybind.html" var="twowaybind" />
+<c:url value="/ng-class.html" var="ngclass" />
+<c:url value="/ng-click-show.html" var="ngclickshow" />
+<c:url value="/ng-if-switch.html" var="ngifswitch" />
+<c:url value="/ng-init.html" var="nginit" />
+<c:url value="/ng-repeat.html" var="ngrepeat" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -128,6 +133,21 @@
                         </li>
                         <li>
                             <a href="${twowaybind}">Two-way binding</a>
+                        </li>
+                        <li>
+                            <a href="${ngclass}">ng-class</a>
+                        </li>
+                        <li>
+                            <a href="${ngclickshow}">ng-show</a>
+                        </li>
+                        <li>
+                            <a href="${ngifswitch}">ng-if</a>
+                        </li>
+                        <li>
+                            <a href="${nginit}">ng-init</a>
+                        </li>
+                        <li>
+                            <a href="${ngrepeat}">ng-repeat</a>
                         </li>
                     </ul>
                 </li>
