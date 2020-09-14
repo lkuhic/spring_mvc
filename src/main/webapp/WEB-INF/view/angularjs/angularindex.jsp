@@ -81,6 +81,10 @@
                         <h3>AngularJS Controller Inheriting</h3>
                         <a href="/ng-controller.html">Контроллер ng-controller. Наследование контроллеров</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Filters</h3>
+                        <a href="/filters.html">Фильтры в AngularJS</a>
+                    </div>
                 </div>
 
             </div>
