@@ -123,6 +123,7 @@
     <mvc:view-controller path="/angulardi.html" view-name="angularjs/angularDI"/>
     <mvc:view-controller path="/ng-controller.html" view-name="angularjs/ng-controller"/>
     <mvc:view-controller path="/filters.html" view-name="angularjs/filters"/>
+    <mvc:view-controller path="/validation.html" view-name="angularjs/validation"/>
 
 
 </beans>
