@@ -91,6 +91,27 @@ public class RestTemplateController {
         System.out.println("@RestTemplateControllerExample deletePostByID is called");
     }
 
+    //JSON Deletes a post. Uses in angularjs/httpres.jsp
+    @RequestMapping(value = "/rest/delPosts/{postId}", method = RequestMethod.DELETE)
+    @ResponseStatus(value = HttpStatus.OK)
+    public void deletePostByIDAngular(@PathVariable(value="postId") String postId) {
+        //in test case 100 posts. Try to del id 100+ (id=150 for example) and check status in console
+        restTemplate.delete(EXTERNAL_REST_URL +"/posts/" + postId);
+        System.out.println("@RestTemplateControllerExample deletePostByID is called");
+    }
+
+    //JSON SAVES a post. Uses in angularjs/httpres.jsp
+    @RequestMapping(value = "/rest/savePost", method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    public void savePost(@RequestBody RestPostsModel postJSON) {
+
+        System.out.println("savePost postJSON.getUserId(): " + postJSON.getUserId());
+        System.out.println("savePost postJSON.getTitle(): " + postJSON.getTitle());
+        System.out.println("savePost postJSON.getId(): " + postJSON.getId());
+        System.out.println("savePost postJSON.getBody(): " + postJSON.getBody());
+        System.out.println("@RestTemplateControllerExample savePost is called");
+    }
+
     @ExceptionHandler
     @ResponseStatus(value = HttpStatus.FORBIDDEN,reason="FORBIDDEN ACCESS (PROVIDE YOUR CUSTOM REASON HERE)")
     public void handleException(Exception ex) {
