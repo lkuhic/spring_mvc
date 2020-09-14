@@ -121,6 +121,6 @@
     <mvc:view-controller path="/ng-init.html" view-name="angularjs/ng-init"/>
     <mvc:view-controller path="/ng-repeat.html" view-name="angularjs/ng-repeat"/>
     <mvc:view-controller path="/angulardi.html" view-name="angularjs/angularDI"/>
-
+    <mvc:view-controller path="/ng-controller.html" view-name="angularjs/ng-controller"/>
 
 </beans>
