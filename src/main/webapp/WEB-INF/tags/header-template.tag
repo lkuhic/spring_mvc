@@ -32,6 +32,7 @@
 <c:url value="/ng-if-switch.html" var="ngifswitch" />
 <c:url value="/ng-init.html" var="nginit" />
 <c:url value="/ng-repeat.html" var="ngrepeat" />
+<c:url value="/angulardi.html" var="angulardi" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -148,6 +149,9 @@
                         </li>
                         <li>
                             <a href="${ngrepeat}">ng-repeat</a>
+                        </li>
+                        <li>
+                            <a href="${angulardi}">Dependency Injection</a>
                         </li>
                     </ul>
                 </li>

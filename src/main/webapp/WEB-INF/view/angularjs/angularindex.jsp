@@ -73,6 +73,10 @@
                         <h3>AngularJS ng-repeat</h3>
                         <a href="/ng-repeat.html">Директива ng-repeat</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Dependency Injection</h3>
+                        <a href="/angulardi.html">Внедрение зависимостей в AngularJS</a>
+                    </div>
                 </div>
 
             </div>
