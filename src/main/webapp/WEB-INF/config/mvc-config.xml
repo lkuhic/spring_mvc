@@ -120,6 +120,7 @@
     <mvc:view-controller path="/ng-if-switch.html" view-name="angularjs/ng-if-switch"/>
     <mvc:view-controller path="/ng-init.html" view-name="angularjs/ng-init"/>
     <mvc:view-controller path="/ng-repeat.html" view-name="angularjs/ng-repeat"/>
+    <mvc:view-controller path="/angulardi.html" view-name="angularjs/angularDI"/>
 
 
 </beans>
