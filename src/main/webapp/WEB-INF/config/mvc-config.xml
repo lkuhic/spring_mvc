@@ -114,5 +114,7 @@
     <mvc:view-controller path="/angularindex.html" view-name="angularjs/angularindex"/>
     <mvc:view-controller path="/expressions.html" view-name="angularjs/expressions"/>
     <mvc:view-controller path="/ng-bind-model.html" view-name="angularjs/ng-bind-model"/>
+    <mvc:view-controller path="/twowaybind.html" view-name="angularjs/twowaybind"/>
+
 
 </beans>
