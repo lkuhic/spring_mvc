@@ -93,6 +93,10 @@
                         <h3>AngularJS Routing</h3>
                         <a href="/routing.html">Понятие routing и templates в AngularJS</a>
                     </div>
+                    <div>
+                        <h3>AngularJS RESTful Services</h3>
+                        <a href="/httpres.html">RESTful сервисы в AngularJS. Использование сервисов $http, $resource для REST вызовов</a>
+                    </div>
                 </div>
 
             </div>
