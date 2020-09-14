@@ -36,6 +36,7 @@
 <c:url value="/ng-controller.html" var="ngcontroller" />
 <c:url value="/filters.html" var="filters" />
 <c:url value="/validation.html" var="validation" />
+<c:url value="/routing.html" var="routing" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -164,6 +165,9 @@
                         </li>
                         <li>
                             <a href="${validation}">Validation</a>
+                        </li>
+                        <li>
+                            <a href="${routing}">Routing</a>
                         </li>
                     </ul>
                 </li>

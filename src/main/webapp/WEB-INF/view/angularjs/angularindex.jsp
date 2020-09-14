@@ -89,6 +89,10 @@
                         <h3>AngularJS Form Validation</h3>
                         <a href="/validation.html">Валидация форм в AngularJS</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Routing</h3>
+                        <a href="/routing.html">Понятие routing и templates в AngularJS</a>
+                    </div>
                 </div>
 
             </div>
