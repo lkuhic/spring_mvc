@@ -25,6 +25,7 @@
 <c:url value="/angularjson.html" var="angularjson" />
 <c:url value="/angularindex.html" var="angularindex" />
 <c:url value="/expressions.html" var="expressions" />
+<c:url value="/ng-bind-model.html" var="ngbind" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -120,6 +121,9 @@
                         </li>
                         <li>
                             <a href="${expressions}">AngularJS Expressions</a>
+                        </li>
+                        <li>
+                            <a href="${ngbind}">Bind-Model</a>
                         </li>
                     </ul>
                 </li>
