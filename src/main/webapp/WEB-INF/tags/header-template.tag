@@ -33,6 +33,7 @@
 <c:url value="/ng-init.html" var="nginit" />
 <c:url value="/ng-repeat.html" var="ngrepeat" />
 <c:url value="/angulardi.html" var="angulardi" />
+<c:url value="/ng-controller.html" var="ngcontroller" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -152,6 +153,9 @@
                         </li>
                         <li>
                             <a href="${angulardi}">Dependency Injection</a>
+                        </li>
+                        <li>
+                            <a href="${ngcontroller}">Controller Inheriting</a>
                         </li>
                     </ul>
                 </li>

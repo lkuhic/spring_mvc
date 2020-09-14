@@ -77,6 +77,10 @@
                         <h3>AngularJS Dependency Injection</h3>
                         <a href="/angulardi.html">Внедрение зависимостей в AngularJS</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Controller Inheriting</h3>
+                        <a href="/ng-controller.html">Контроллер ng-controller. Наследование контроллеров</a>
+                    </div>
                 </div>
 
             </div>
