@@ -35,6 +35,7 @@
 <c:url value="/angulardi.html" var="angulardi" />
 <c:url value="/ng-controller.html" var="ngcontroller" />
 <c:url value="/filters.html" var="filters" />
+<c:url value="/validation.html" var="validation" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -160,6 +161,9 @@
                         </li>
                         <li>
                             <a href="${filters}">Filters</a>
+                        </li>
+                        <li>
+                            <a href="${validation}">Validation</a>
                         </li>
                     </ul>
                 </li>

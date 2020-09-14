@@ -85,6 +85,10 @@
                         <h3>AngularJS Filters</h3>
                         <a href="/filters.html">Фильтры в AngularJS</a>
                     </div>
+                    <div>
+                        <h3>AngularJS Form Validation</h3>
+                        <a href="/validation.html">Валидация форм в AngularJS</a>
+                    </div>
                 </div>
 
             </div>
