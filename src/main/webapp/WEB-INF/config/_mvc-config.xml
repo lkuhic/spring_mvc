@@ -60,7 +60,7 @@
     <!--  -->
     <bean class="org.springframework.web.servlet.view.XmlViewResolver">
         <property name="order" value="0" />
-        <property name="location" value = "/WEB-INF/config/excel-pdf-config.xml">
+        <property name="location" value = "/excel-pdf-config.xml">
         </property>
     </bean>
 
